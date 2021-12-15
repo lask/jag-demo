@@ -40,12 +40,9 @@ main:
   ctr := tft.text (sans_big_context.with --alignment=TEXT_TEXTURE_ALIGN_RIGHT) width / 2 height "00000"
   ctr_small := tft.text sans_context width / 2 height "000"
 
-  hello := tft.text sans_big_blue width / 2 height / 2 "Hello, Jag!"
+  hello := tft.text sans_big_blue width / 2 height / 2 "Hello, World!"
 
   tft.draw
-
-  icon := tft.icon (tft.context --color=WHITE --alignment=TEXT_TEXTURE_ALIGN_CENTER) width / 2 height / 2 + 48 icons.NUKE
-
 
   last := Time.monotonic_us
   while true:
